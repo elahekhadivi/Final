@@ -1,0 +1,40 @@
+<form [formGroup]="form">
+    <div>
+        <div>
+           <h1>Restaurant Records Form</h1><br><br>
+        </div>
+        <div>
+            <label for="resName">Restaurant Name: </label>
+            <input formControlName="resName" type="text" id="resName" name="resName"><br><br>
+        </div>
+        <div>
+            <label  for="resPhone">Restaurant Phone: </label>
+            <input formControlName="resPhone" type="text" id="resPhone" name="resPhone"><br><br>
+        </div>
+        <div>
+            <label  for="resAddress">Restaurant Address: </label>
+            <input formControlName="resAddress" type="resAddress" id="resAddress" name="resAddress"><br><br>
+        </div>
+        <div>
+            <label  for="postalCode">Postal Code: </label>
+            <input formControlName="postalCode" type="text" id="postalCode" name="postalCode"><br><br>
+        </div>
+        <div>
+            <label  for="city">City: </label>
+            <input formControlName="city" type="text" id="city" name="city"><br><br>
+        </div>
+        <div>
+            <label  for="email">Email: </label>
+            <input formControlName="email" type="text" id="email" name="email"><br><br>
+        </div>
+        <div>
+            <label  for="resServices">Restaurant Services: </label>
+            <input formControlName="resServices" type="text" id="resServices" name="resServices"><br><br>
+        </div>
+        <div>
+            <button (click)="clearForm()" > Clear</button>
+            <button (click)="submit()" [disabled]="!form.valid" value="Submit"> Save</button>
+        </div>
+    </div>
+</form> 
+  
